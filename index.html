@@ -6,7 +6,7 @@
     <title>The Verdict Room</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
 
     <style>
         * {
@@ -16,7 +16,10 @@
         }
 
         body {
-            font-family: "Silkscreen", serif;
+            font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
             line-height: 1.6;
             background-color: #f9f9f9;
             color: #333;
@@ -29,7 +32,8 @@
         }
 
             header h1 {
-                font-family: "Silkscreen", serif;
+                font-family: "Lora", serif;
+                font-weight: 500;
                 font-size: 2.5rem;
                 margin-bottom: 10px;
             }
@@ -49,7 +53,8 @@
         }
 
             section h2 {
-                font-family: "Silkscreen", serif;
+                font-family: "Lora", serif;
+                font-weight: 500;
                 font-size: 2rem;
                 margin-bottom: 10px;
                 color: #444;
@@ -65,36 +70,56 @@
             font-size: 0.9rem;
             color: #777;
         }
+
+        /* Links */
+        a {
+            color: lightblue;
+            text-decoration: none;
+        }
+
+            a:hover {
+                color: red;
+            }
+        /* Custom Classes */
+        .thick-underline {
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+        }
     </style>
 
 </head>
 <body>
     <header>
         <h1>The Verdict Room</h1>
-        <p>A simple customizable website powered by GitHub Pages</p>
+        <p>A group project based on the monipulation in the justice system and how simple decisions can have a huge impact to someone.</p>
     </header>
 
     <main>
         <section>
             <h2>About</h2>
-            <p>This is a basic template to help you get started with your website. You can edit the content, styles, and layout to suit your needs.</p>
+            <p>The player is a judge and must decide the fate of 15 inmates, depending on what is written in their documents. Your choices alter what ending you recieve at the end of the game.</p>
         </section>
 
         <section>
-            <h2>Features</h2>
-            <p>- Fully customizable</p>
-            <p>- Powered by GitHub Pages</p>
-            <p>- Uses modern web technologies</p>
+            <h2>Process</h2>
+            <p>
+                <span class="thick-underline">Art/Visuals:</span> We had a dedicated 2D artist for this project and they did a great job.
+            </p>
+            <p>
+                <span class="thick-underline">Sound/Music:</span> One of my teammates made the music but I was the one who had to edit all the voices for the game. 
+                This was done with Audacity, I added a distortion effect to make it seem like there was glass in the way, or the voice is coming through a telephone.
+            </p>
+            <p>
+                <span class="thick-underline">Code:</span> This game was a huge step up from anything I had made before, many challenges were overcome. I used many online reasorces to reach our goal, 
+                Unity forums, Stackoverflow and YouTube tutorials were my main sources of information. I am extremely proud of myself and everything I managed to do in this game, 
+                I often go back and look and the code I wrote to partially re-use in other projects.
+            </p>
         </section>
 
         <section>
             <h2>Contact</h2>
-            <p>Feel free to reach out with questions or feedback!</p>
+            <p>Feel free to check out my <a href="https://eugeniocl.wixsite.com/eclgamesdesign" target="_blank">portfolio</a> for links to get in touch!</p>
         </section>
     </main>
-
-    <footer>
-        <p>© 2024 My Custom Website. All rights reserved.</p>
-    </footer>
 </body>
 </html>
